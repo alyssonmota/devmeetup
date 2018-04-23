@@ -1,6 +1,6 @@
 # devmeetup
 
-> A dev meetup app built with Vue + Vuetify + Firebase
+> A dev meetup app built with Vue + Vuetify + Firebase based on this video series: https://bit.ly/2JjqPKu
 
 ## Build Setup
 
