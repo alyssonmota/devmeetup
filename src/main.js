@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import App from './App'
+import * as firebase from 'firebase'
 import router from './router'
 import Vuetify from 'vuetify'
 import 'vuetify/dist/vuetify.min.css'
@@ -26,5 +27,14 @@ new Vue({
   el: '#app',
   router,
   store,
-  render: h => h(App)
+  render: h => h(App),
+  created () {
+    firebase.initializeApp({
+      apiKey: 'AIzaSyBVcxWY8PNd3aXem8RSwuiD00taXd81oUc',
+      authDomain: 'devmeetup-24e5e.firebaseapp.com',
+      databaseURL: 'https://devmeetup-24e5e.firebaseio.com',
+      projectId: 'devmeetup-24e5e',
+      storageBucket: ''
+    })
+  }
 })
