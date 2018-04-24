@@ -34,20 +34,17 @@
 
 <script>
 export default {
-  data() {
-    return {
-      meetups: [
-        { imageUrl: 'https://thenypost.files.wordpress.com/2017/04/new-york.jpg?quality=90&strip=all&w=618&h=410&crop=1', id: 'cjkuaskj', title: 'Meetup in New York' },
-        { imageUrl: 'https://abrilviagemeturismo.files.wordpress.com/2016/10/paris-verao-franca.jpeg?quality=70&strip=info&w=920', id: 'cascascs', title: 'Meetup in Paris' },
-      ],
-    };
+  computed: {
+    meetups () {
+      return this.$store.getters.featuredMeetups
+    }
   },
   methods: {
-    onLoadMeetup(id) {
-      this.$router.push(`/meetups/${id}`);
-    },
-  },
-};
+    onLoadMeetup (id) {
+      this.$router.push(`/meetups/${id}`)
+    }
+  }
+}
 </script>
 
 <style scoped>
