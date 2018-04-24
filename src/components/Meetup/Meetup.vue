@@ -12,8 +12,8 @@
           >
           </v-card-media>
           <v-card-text>
-            <div class="info--text">{{ meetup.date }} - Where it takes place</div>
-            <div>Adipisicing tempor esse ea non et nisi nulla. Irure minim ad sunt qui voluptate in adipisicing eiusmod officia duis. Non labore amet magna ad mollit aute quis quis adipisicing nisi tempor non. Voluptate pariatur consequat consequat ea reprehenderit veniam Lorem consequat est duis duis duis. Pariatur dolore laborum ullamco consectetur non. Qui minim commodo irure nostrud dolor laborum elit.</div>
+            <div class="info--text">{{ meetup.date }} - {{ meetup.location }}</div>
+            <div>{{ meetup.description }}</div>
           </v-card-text>
           <v-card-actions>
             <v-spacer></v-spacer>
