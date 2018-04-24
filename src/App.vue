@@ -43,7 +43,7 @@
 
 <script>
 export default {
-  data() {
+  data () {
     return {
       sideNav: false,
       menuItems: [
@@ -51,10 +51,10 @@ export default {
         { icon: 'room', title: 'Organize Meetup', link: '/meetups/new' },
         { icon: 'person', title: 'Profile', link: '/profile' },
         { icon: 'face', title: 'Sign up', link: '/signup' },
-        { icon: 'lock_open', title: 'Sign in', link: '/signin' },
-      ],
-    };
+        { icon: 'lock_open', title: 'Sign in', link: '/signin' }
+      ]
+    }
   },
-  name: 'App',
-};
+  name: 'App'
+}
 </script>
