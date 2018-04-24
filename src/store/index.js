@@ -10,14 +10,14 @@ export const store = new Vuex.Store({
         imageUrl: 'https://thenypost.files.wordpress.com/2017/04/new-york.jpg?quality=90&strip=all&w=618&h=410&crop=1',
         id: 'cjkuaskj',
         title: 'Meetup in New York',
-        date: '2017-07-17',
+        date: new Date(),
         location: 'New York'
       },
       {
         imageUrl: 'https://abrilviagemeturismo.files.wordpress.com/2016/10/paris-verao-franca.jpeg?quality=70&strip=info&w=920',
         id: 'cascascs',
         title: 'Meetup in Paris',
-        date: '2017-07-19',
+        date: new Date(),
         location: 'Paris',
         description: 'It\'s Paris!'
       }
