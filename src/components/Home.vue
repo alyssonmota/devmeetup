@@ -10,10 +10,11 @@
     </v-layout>
     <v-layout>
       <v-flex xs12 mt-2>
-        <v-carousel>
+        <v-carousel style="cursor: pointer">
           <v-carousel-item v-for="meetup in meetups"
             :src="meetup.imageUrl"
-            :key="meetup.id">
+            :key="meetup.id"
+            @click.native="onLoadMeetup(meetup.id)">
             <v-layout align-center>
               <v-flex class="title text-xs-center">
                 {{ meetup.title }}
@@ -40,6 +41,11 @@ export default {
         { imageUrl: 'https://abrilviagemeturismo.files.wordpress.com/2016/10/paris-verao-franca.jpeg?quality=70&strip=info&w=920', id: 'cascascs', title: 'Meetup in Paris' },
       ],
     };
+  },
+  methods: {
+    onLoadMeetup(id) {
+      this.$router.push(`/meetups/${id}`);
+    },
   },
 };
 </script>
